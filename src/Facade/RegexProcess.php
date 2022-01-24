@@ -53,7 +53,7 @@ class RegexProcess
 
     public function url($value)
     {
-        return preg_match('/^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$/i', $value);
+        return preg_match('^http(s)?:\/\/[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(\/.*)?$/i', $value);
     }
 
     public function iban($value)
