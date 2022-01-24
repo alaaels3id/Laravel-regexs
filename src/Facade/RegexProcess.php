@@ -30,6 +30,11 @@ class RegexProcess
         return preg_match('@^(?:https://(?:www\\.)?youtube.com/)(watch\\?v=|v/)([a-zA-Z0-9_]*)@', $value);
     }
 
+    public function url($value)
+    {
+        return preg_match('/^http(s)?:\/\/[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(\/.*)?$/i', $value);
+    }
+
     public function latitude($value)
     {
         return preg_match('/^[-]?(([0-8]?[0-9])\.(\d+))|(90(\.0+)?)$/', $value);
@@ -49,11 +54,6 @@ class RegexProcess
     public function noSpaces($value)
     {
         return preg_match('/^\S*$/u', $value);
-    }
-
-    public function url($value)
-    {
-        return preg_match('^http(s)?:\/\/[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(\/.*)?$/i', $value);
     }
 
     public function iban($value)
