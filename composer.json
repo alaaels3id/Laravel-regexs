@@ -1,0 +1,19 @@
+{
+    "name": "alaaelsaid/laravel-regexs",
+    "description": "This is some regex for php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alaaelsaid\\LaravelRegexs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alaa Elsaid",
+            "email": "alaa4cat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
