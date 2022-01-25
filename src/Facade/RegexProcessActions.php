@@ -2,7 +2,7 @@
 
 namespace Alaaelsaid\LaravelRegexs\Facade;
 
-class RegexProcess
+class RegexProcessActions
 {
     public function email($value)
     {

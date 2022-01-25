@@ -3,7 +3,7 @@
 namespace Alaaelsaid\LaravelRegexs\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Alaaelsaid\LaravelRegexs\Facade\RegexProcess;
+use Alaaelsaid\LaravelRegexs\Facade\RegexProcessActions;
 
 class RegexServiceProvider extends ServiceProvider
 {
@@ -14,6 +14,6 @@ class RegexServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('Regex', fn() => new RegexProcess());
+        $this->app->singleton('Regex', fn() => new RegexProcessActions());
     }
 }
