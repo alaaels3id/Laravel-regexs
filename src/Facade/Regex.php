@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static iban(string $value)
  * @method static url(string $value)
  *
- * @see RegexProcess
+ * @see RegexProcessActions
  */
 
 class Regex extends Facade
